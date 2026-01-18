@@ -4,7 +4,24 @@ A simple, free expense tracking system using **iPhone Shortcuts + Google Sheets*
 
 Perfect for couples, families, or solo use.
 
-![Demo](https://img.shields.io/badge/Setup_Time-15_mins-green) ![Free](https://img.shields.io/badge/Cost-Free-brightgreen) ![Platform](https://img.shields.io/badge/Platform-iPhone-blue)
+![Setup Time](https://img.shields.io/badge/Setup_Time-15_mins-green) ![Free](https://img.shields.io/badge/Cost-Free-brightgreen) ![Platform](https://img.shields.io/badge/Platform-iPhone-blue)
+
+---
+
+## 🎬 Demo
+
+https://github.com/todoitservices/expense-logger/assets/Cash%20Logger%20Reel%20ToDo%20IT.mp4
+
+<!-- 
+NOTE: After pushing to GitHub, replace the above with the actual video embed.
+Steps:
+1. Go to README.md on GitHub
+2. Click Edit (pencil icon)
+3. Delete the line above
+4. Drag your video file from assets/ folder into the editor
+5. GitHub will auto-generate the embed code
+6. Commit changes
+-->
 
 ---
 
@@ -16,6 +33,21 @@ Perfect for couples, families, or solo use.
 - **Free forever** — No subscriptions, no apps to install
 - **Offline capable** — Queues and syncs when online
 - **5 seconds** — Faster than any expense app
+
+---
+
+## 🔄 How It Works
+
+![Architecture Flow](screenshots/architecture-flow.svg)
+
+```
+iPhone Shortcut → Google Apps Script → Google Sheet
+```
+
+1. Tap shortcut on home screen
+2. Enter amount & description
+3. Select who paid
+4. Done! Data syncs to Google Sheets instantly.
 
 ---
 
@@ -52,7 +84,9 @@ https://docs.google.com/spreadsheets/d/SHEET_ID_HERE/edit
 1. Go to [script.google.com](https://script.google.com)
 2. Click **New Project**
 3. Name it: `Expense Logger`
-4. Delete existing code and paste:
+4. Delete existing code and paste the code from [`apps-script/code.js`](apps-script/code.js)
+
+Or copy this:
 
 ```javascript
 function doPost(e) {
@@ -88,6 +122,11 @@ function doPost(e) {
 ### Step 3: Create iPhone Shortcut
 
 Open the **Shortcuts** app and create a new shortcut with these actions:
+
+![Shortcut Flow](screenshots/shortcut-flow-diagram.svg)
+
+<details>
+<summary>📱 Click to expand detailed steps</summary>
 
 #### Action 1: Ask for Input
 - Type: **Number**
@@ -132,6 +171,14 @@ Open the **Shortcuts** app and create a new shortcut with these actions:
 - Then: **Show Notification** → `₹[amount] saved ✓`
 - Otherwise: **Show Notification** → `❌ Failed - Try again`
 
+</details>
+
+**Real Screenshots:**
+
+| Step 1 | Step 2 |
+|--------|--------|
+| ![Flow 1](screenshots/screenshot_flow_1.png) | ![Flow 2](screenshots/screenshot_flow_2.png) |
+
 ---
 
 ### Step 4: Add to Home Screen
@@ -141,6 +188,20 @@ Open the **Shortcuts** app and create a new shortcut with these actions:
 3. Name it: `₹ Log` or `Expense`
 4. Choose an icon
 5. Done! 🎉
+
+---
+
+## 📊 Google Sheet Example
+
+![Sheet Example](screenshots/sheet-example.svg)
+
+Your expenses will automatically appear like this:
+
+| Date | Amount | Description | Who |
+|------|--------|-------------|-----|
+| 18/1/2026, 9:30 AM | ₹ 450 | Grocery - BigBasket | Gaurav |
+| 18/1/2026, 12:15 PM | ₹ 80 | Auto rickshaw | Kaira |
+| 18/1/2026, 7:45 PM | ₹ 1,200 | Electricity bill | Gaurav |
 
 ---
 
@@ -155,28 +216,50 @@ Open the **Shortcuts** app and create a new shortcut with these actions:
 
 ## 🛠️ Troubleshooting
 
-### "Script function not found: doPost"
-- Create a **new deployment** and update the URL in your shortcut
+<details>
+<summary>❌ "Script function not found: doPost"</summary>
 
-### "400 Bad Request"
-- Wait 5 minutes (Google rate limit)
-- Create new deployment with fresh URL
+Create a **new deployment** and update the URL in your shortcut.
+</details>
 
-### Data in wrong columns
-- Check JSON text block — no spaces around variables
-- Should be: `{"amount":"[amount]"...}` not `{"amount":" [amount] "...}`
+<details>
+<summary>❌ "400 Bad Request"</summary>
 
-### Google sign-in page appears
-- Redeploy with **"Who has access: Anyone"** (not "Anyone with Google account")
+Wait 5 minutes (Google rate limit), then create new deployment with fresh URL.
+</details>
+
+<details>
+<summary>❌ Data in wrong columns</summary>
+
+Check JSON text block — no spaces around variables.
+Should be: `{"amount":"[amount]"...}` not `{"amount":" [amount] "...}`
+</details>
+
+<details>
+<summary>❌ Google sign-in page appears</summary>
+
+Redeploy with **"Who has access: Anyone"** (not "Anyone with Google account")
+</details>
 
 ---
 
-## 📁 Files in This Repo
+## 📁 Repository Structure
 
-| File | Description |
-|------|-------------|
-| `README.md` | This setup guide |
-| `apps-script/code.js` | Google Apps Script code |
+```
+expense-logger/
+├── README.md                 ← You are here
+├── LICENSE                   ← MIT License
+├── apps-script/
+│   └── code.js              ← Google Apps Script code
+├── assets/
+│   └── Cash Logger Reel ToDo IT.mp4   ← Demo video
+└── screenshots/
+    ├── architecture-flow.svg          ← How it works diagram
+    ├── shortcut-flow-diagram.svg      ← Shortcut steps diagram
+    ├── sheet-example.svg              ← Sheet mockup
+    ├── screenshot_flow_1.png          ← Real iPhone screenshot
+    └── screenshot_flow_2.png          ← Real iPhone screenshot
+```
 
 ---
 
@@ -215,9 +298,9 @@ We build smart automations for businesses.
 ## ⭐ Support
 
 If this helped you, please:
-- Star this repo ⭐
-- Share with someone who needs it
-- Follow [@todoitservices](https://instagram.com/todoitservices) for more
+- ⭐ Star this repo
+- 📤 Share with someone who needs it
+- 📱 Follow [@todoitservices](https://instagram.com/todoitservices) for more
 
 ---
 
