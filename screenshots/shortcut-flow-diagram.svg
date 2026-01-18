@@ -1,0 +1,114 @@
+<svg viewBox="0 0 400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d2d44;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1f1f35;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="900" fill="url(#bgGrad)"/>
+  
+  <!-- Title -->
+  <text x="200" y="40" text-anchor="middle" fill="#ffffff" font-family="SF Pro Display, -apple-system, Arial" font-size="20" font-weight="600">Shortcut Flow</text>
+  <text x="200" y="62" text-anchor="middle" fill="#8b8b9e" font-family="SF Pro Display, -apple-system, Arial" font-size="12">iPhone Expense Logger</text>
+  
+  <!-- Step 1: Ask Amount -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="90" width="340" height="70" rx="12" fill="url(#cardGrad)"/>
+    <circle cx="60" cy="125" r="18" fill="#007AFF"/>
+    <text x="60" y="130" text-anchor="middle" fill="#ffffff" font-family="SF Pro Display, Arial" font-size="14" font-weight="600">1</text>
+    <text x="90" y="118" fill="#ffffff" font-family="SF Pro Display, Arial" font-size="14" font-weight="500">Ask for Input</text>
+    <text x="90" y="138" fill="#8b8b9e" font-family="SF Pro Display, Arial" font-size="12">Type: Number → "Amount ₹"</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M200 160 L200 175 L195 170 M200 175 L205 170" stroke="#00d4ff" stroke-width="2" fill="none"/>
+  
+  <!-- Step 2: Set Variable Amount -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="185" width="340" height="70" rx="12" fill="url(#cardGrad)"/>
+    <circle cx="60" cy="220" r="18" fill="#FF9500"/>
+    <text x="60" y="225" text-anchor="middle" fill="#ffffff" font-family="SF Pro Display, Arial" font-size="14" font-weight="600">2</text>
+    <text x="90" y="213" fill="#ffffff" font-family="SF Pro Display, Arial" font-size="14" font-weight="500">Set Variable</text>
+    <text x="90" y="233" fill="#8b8b9e" font-family="SF Pro Display, Arial" font-size="12">Name: "amount"</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M200 255 L200 270 L195 265 M200 270 L205 265" stroke="#00d4ff" stroke-width="2" fill="none"/>
+  
+  <!-- Step 3: Ask Description -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="280" width="340" height="70" rx="12" fill="url(#cardGrad)"/>
+    <circle cx="60" cy="315" r="18" fill="#007AFF"/>
+    <text x="60" y="320" text-anchor="middle" fill="#ffffff" font-family="SF Pro Display, Arial" font-size="14" font-weight="600">3</text>
+    <text x="90" y="308" fill="#ffffff" font-family="SF Pro Display, Arial" font-size="14" font-weight="500">Ask for Input</text>
+    <text x="90" y="328" fill="#8b8b9e" font-family="SF Pro Display, Arial" font-size="12">Type: Text → "Description"</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M200 350 L200 365 L195 360 M200 365 L205 360" stroke="#00d4ff" stroke-width="2" fill="none"/>
+  
+  <!-- Step 4: List + Choose -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="375" width="340" height="70" rx="12" fill="url(#cardGrad)"/>
+    <circle cx="60" cy="410" r="18" fill="#34C759"/>
+    <text x="60" y="415" text-anchor="middle" fill="#ffffff" font-family="SF Pro Display, Arial" font-size="14" font-weight="600">4</text>
+    <text x="90" y="403" fill="#ffffff" font-family="SF Pro Display, Arial" font-size="14" font-weight="500">List + Choose from List</text>
+    <text x="90" y="423" fill="#8b8b9e" font-family="SF Pro Display, Arial" font-size="12">Options: "Gaurav", "Kaira"</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M200 445 L200 460 L195 455 M200 460 L205 455" stroke="#00d4ff" stroke-width="2" fill="none"/>
+  
+  <!-- Step 5: Text JSON -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="470" width="340" height="70" rx="12" fill="url(#cardGrad)"/>
+    <circle cx="60" cy="505" r="18" fill="#FF3B30"/>
+    <text x="60" y="510" text-anchor="middle" fill="#ffffff" font-family="SF Pro Display, Arial" font-size="14" font-weight="600">5</text>
+    <text x="90" y="498" fill="#ffffff" font-family="SF Pro Display, Arial" font-size="14" font-weight="500">Text (JSON Body)</text>
+    <text x="90" y="518" fill="#8b8b9e" font-family="SF Pro Display, Arial" font-size="11">{"amount":"...","description":"...","who":"..."}</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M200 540 L200 555 L195 550 M200 555 L205 550" stroke="#00d4ff" stroke-width="2" fill="none"/>
+  
+  <!-- Step 6: POST Request -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="565" width="340" height="85" rx="12" fill="url(#cardGrad)"/>
+    <circle cx="60" cy="607" r="18" fill="#5856D6"/>
+    <text x="60" y="612" text-anchor="middle" fill="#ffffff" font-family="SF Pro Display, Arial" font-size="14" font-weight="600">6</text>
+    <text x="90" y="593" fill="#ffffff" font-family="SF Pro Display, Arial" font-size="14" font-weight="500">Get Contents of URL</text>
+    <text x="90" y="613" fill="#8b8b9e" font-family="SF Pro Display, Arial" font-size="11">Method: POST</text>
+    <text x="90" y="633" fill="#8b8b9e" font-family="SF Pro Display, Arial" font-size="11">Headers: Content-Type: application/json</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M200 650 L200 665 L195 660 M200 665 L205 660" stroke="#00d4ff" stroke-width="2" fill="none"/>
+  
+  <!-- Step 7: Notification -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="675" width="340" height="70" rx="12" fill="url(#cardGrad)"/>
+    <circle cx="60" cy="710" r="18" fill="#00d4ff"/>
+    <text x="60" y="715" text-anchor="middle" fill="#ffffff" font-family="SF Pro Display, Arial" font-size="14" font-weight="600">7</text>
+    <text x="90" y="703" fill="#ffffff" font-family="SF Pro Display, Arial" font-size="14" font-weight="500">Show Notification</text>
+    <text x="90" y="723" fill="#8b8b9e" font-family="SF Pro Display, Arial" font-size="12">"₹[amount] saved ✓" or "❌ Failed"</text>
+  </g>
+  
+  <!-- Result Box -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="770" width="340" height="50" rx="12" fill="#00d4ff" fill-opacity="0.15" stroke="#00d4ff" stroke-width="1"/>
+    <text x="200" y="800" text-anchor="middle" fill="#00d4ff" font-family="SF Pro Display, Arial" font-size="14" font-weight="500">✓ Expense logged to Google Sheets!</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="200" y="860" text-anchor="middle" fill="#5a5a6e" font-family="SF Pro Display, Arial" font-size="11">Built by ToDo IT Services</text>
+  <text x="200" y="878" text-anchor="middle" fill="#5a5a6e" font-family="SF Pro Display, Arial" font-size="10">@todoitservices</text>
+</svg>

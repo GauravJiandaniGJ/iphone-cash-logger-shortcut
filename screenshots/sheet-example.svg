@@ -1,0 +1,100 @@
+<svg viewBox="0 0 700 350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sheetBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </linearGradient>
+    <filter id="sheetShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="8" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="700" height="350" fill="#f0f0f0"/>
+  
+  <!-- Sheet Container -->
+  <g filter="url(#sheetShadow)">
+    <rect x="20" y="20" width="660" height="310" rx="8" fill="url(#sheetBg)"/>
+  </g>
+  
+  <!-- Title Bar -->
+  <rect x="20" y="20" width="660" height="45" rx="8" fill="#0F9D58"/>
+  <rect x="20" y="50" width="660" height="15" fill="#0F9D58"/>
+  <text x="45" y="48" fill="#ffffff" font-family="Google Sans, SF Pro Display, Arial" font-size="16" font-weight="500">📊 Daily Cash Expenses</text>
+  
+  <!-- Toolbar hint -->
+  <rect x="20" y="65" width="660" height="25" fill="#f1f3f4"/>
+  <text x="35" y="82" fill="#5f6368" font-family="SF Pro Display, Arial" font-size="11">File  Edit  View  Insert  Format  Data  Tools  Extensions  Help</text>
+  
+  <!-- Column Headers -->
+  <rect x="20" y="90" width="660" height="35" fill="#f8f9fa"/>
+  <line x1="20" y1="125" x2="680" y2="125" stroke="#e0e0e0" stroke-width="1"/>
+  
+  <!-- Row number column -->
+  <rect x="20" y="90" width="40" height="35" fill="#f1f3f4"/>
+  <line x1="60" y1="90" x2="60" y2="330" stroke="#e0e0e0" stroke-width="1"/>
+  
+  <!-- Column letters -->
+  <text x="130" y="112" text-anchor="middle" fill="#5f6368" font-family="SF Pro Display, Arial" font-size="12" font-weight="500">A</text>
+  <text x="270" y="112" text-anchor="middle" fill="#5f6368" font-family="SF Pro Display, Arial" font-size="12" font-weight="500">B</text>
+  <text x="430" y="112" text-anchor="middle" fill="#5f6368" font-family="SF Pro Display, Arial" font-size="12" font-weight="500">C</text>
+  <text x="600" y="112" text-anchor="middle" fill="#5f6368" font-family="SF Pro Display, Arial" font-size="12" font-weight="500">D</text>
+  
+  <!-- Column dividers -->
+  <line x1="200" y1="90" x2="200" y2="330" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="340" y1="90" x2="340" y2="330" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="520" y1="90" x2="520" y2="330" stroke="#e0e0e0" stroke-width="1"/>
+  
+  <!-- Header Row -->
+  <rect x="20" y="125" width="660" height="35" fill="#e8f0fe"/>
+  <line x1="20" y1="160" x2="680" y2="160" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="40" y="147" fill="#5f6368" font-family="SF Pro Display, Arial" font-size="11">1</text>
+  <text x="70" y="147" fill="#1a73e8" font-family="SF Pro Display, Arial" font-size="13" font-weight="600">Date</text>
+  <text x="210" y="147" fill="#1a73e8" font-family="SF Pro Display, Arial" font-size="13" font-weight="600">Amount</text>
+  <text x="350" y="147" fill="#1a73e8" font-family="SF Pro Display, Arial" font-size="13" font-weight="600">Description</text>
+  <text x="530" y="147" fill="#1a73e8" font-family="SF Pro Display, Arial" font-size="13" font-weight="600">Who</text>
+  
+  <!-- Data Row 1 -->
+  <rect x="20" y="160" width="660" height="35" fill="#ffffff"/>
+  <line x1="20" y1="195" x2="680" y2="195" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="40" y="182" fill="#5f6368" font-family="SF Pro Display, Arial" font-size="11">2</text>
+  <text x="70" y="182" fill="#202124" font-family="SF Pro Display, Arial" font-size="12">18/1/2026, 9:30 AM</text>
+  <text x="210" y="182" fill="#202124" font-family="SF Pro Display, Arial" font-size="12">₹ 450</text>
+  <text x="350" y="182" fill="#202124" font-family="SF Pro Display, Arial" font-size="12">Grocery - BigBasket</text>
+  <text x="530" y="182" fill="#202124" font-family="SF Pro Display, Arial" font-size="12">Gaurav</text>
+  
+  <!-- Data Row 2 -->
+  <rect x="20" y="195" width="660" height="35" fill="#f8f9fa"/>
+  <line x1="20" y1="230" x2="680" y2="230" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="40" y="217" fill="#5f6368" font-family="SF Pro Display, Arial" font-size="11">3</text>
+  <text x="70" y="217" fill="#202124" font-family="SF Pro Display, Arial" font-size="12">18/1/2026, 12:15 PM</text>
+  <text x="210" y="217" fill="#202124" font-family="SF Pro Display, Arial" font-size="12">₹ 80</text>
+  <text x="350" y="217" fill="#202124" font-family="SF Pro Display, Arial" font-size="12">Auto rickshaw</text>
+  <text x="530" y="217" fill="#202124" font-family="SF Pro Display, Arial" font-size="12">Kaira</text>
+  
+  <!-- Data Row 3 -->
+  <rect x="20" y="230" width="660" height="35" fill="#ffffff"/>
+  <line x1="20" y1="265" x2="680" y2="265" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="40" y="252" fill="#5f6368" font-family="SF Pro Display, Arial" font-size="11">4</text>
+  <text x="70" y="252" fill="#202124" font-family="SF Pro Display, Arial" font-size="12">18/1/2026, 7:45 PM</text>
+  <text x="210" y="252" fill="#202124" font-family="SF Pro Display, Arial" font-size="12">₹ 1,200</text>
+  <text x="350" y="252" fill="#202124" font-family="SF Pro Display, Arial" font-size="12">Electricity bill</text>
+  <text x="530" y="252" fill="#202124" font-family="SF Pro Display, Arial" font-size="12">Gaurav</text>
+  
+  <!-- Data Row 4 (New - highlighted) -->
+  <rect x="20" y="265" width="660" height="35" fill="#e6f4ea"/>
+  <line x1="20" y1="300" x2="680" y2="300" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="40" y="287" fill="#5f6368" font-family="SF Pro Display, Arial" font-size="11">5</text>
+  <text x="70" y="287" fill="#137333" font-family="SF Pro Display, Arial" font-size="12" font-weight="500">18/1/2026, 8:30 PM</text>
+  <text x="210" y="287" fill="#137333" font-family="SF Pro Display, Arial" font-size="12" font-weight="500">₹ 350</text>
+  <text x="350" y="287" fill="#137333" font-family="SF Pro Display, Arial" font-size="12" font-weight="500">Dinner - Swiggy</text>
+  <text x="530" y="287" fill="#137333" font-family="SF Pro Display, Arial" font-size="12" font-weight="500">Kaira</text>
+  
+  <!-- "Just added" indicator -->
+  <rect x="610" y="272" width="60" height="20" rx="10" fill="#137333"/>
+  <text x="640" y="286" text-anchor="middle" fill="#ffffff" font-family="SF Pro Display, Arial" font-size="9" font-weight="500">✓ NEW</text>
+  
+  <!-- Empty Row -->
+  <rect x="20" y="300" width="660" height="30" fill="#f8f9fa"/>
+  <text x="40" y="320" fill="#5f6368" font-family="SF Pro Display, Arial" font-size="11">6</text>
+</svg>
