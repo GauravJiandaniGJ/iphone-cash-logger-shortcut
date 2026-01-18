@@ -10,17 +10,11 @@ Perfect for couples, families, or solo use.
 
 ## 🎬 Demo
 
-https://github.com/todoitservices/expense-logger/assets/Cash%20Logger%20Reel%20ToDo%20IT.mp4
-
 <!-- 
-NOTE: After pushing to GitHub, replace the above with the actual video embed.
-Steps:
-1. Go to README.md on GitHub
-2. Click Edit (pencil icon)
-3. Delete the line above
-4. Drag your video file from assets/ folder into the editor
-5. GitHub will auto-generate the embed code
-6. Commit changes
+TO ADD VIDEO: 
+1. Edit this README on GitHub
+2. Drag your video file here
+3. GitHub will auto-generate the embed code
 -->
 
 ---
@@ -287,7 +281,7 @@ MIT License — use it however you want.
 
 ## 🏢 Built By
 
-**[ToDo IT Services](https://instagram.com/todoitservices)**
+**[ToDo IT Services](https://instagram.com/todoitservices)** | **[GitHub](https://github.com/GauravJiandaniGJ)**
 
 We build smart automations for businesses.
 
