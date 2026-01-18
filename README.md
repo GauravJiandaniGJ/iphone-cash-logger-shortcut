@@ -10,6 +10,9 @@ Perfect for couples, families, or solo use.
 
 ## 🎬 Demo
 
+https://github.com/user-attachments/assets/5b98a320-516d-4e9d-9d61-140b7f0548c3
+
+
 <!-- 
 TO ADD VIDEO: 
 1. Edit this README on GitHub
