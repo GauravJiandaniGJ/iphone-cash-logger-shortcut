@@ -10,7 +10,9 @@ Perfect for couples, families, or solo use.
 
 ## 🎬 Demo
 
-https://github.com/user-attachments/assets/5b98a320-516d-4e9d-9d61-140b7f0548c3
+https://github.com/user-attachments/assets/161dfded-402e-4c78-bdfb-d8bae3cb1fd8
+
+
 
 
 <!-- 
@@ -284,7 +286,7 @@ MIT License — use it however you want.
 
 ## 🏢 Built By
 
-**[Gaurav Jiandani](https://instagram.com/todoitservices)** | **[GitHub](https://github.com/GauravJiandaniGJ)**
+**[Gaurav Jiandani](https://instagram.com/gj288)** | **[GitHub](https://github.com/GauravJiandaniGJ)**
 
 We build smart automations for businesses.
 
