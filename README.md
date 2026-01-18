@@ -249,7 +249,7 @@ expense-logger/
 ├── apps-script/
 │   └── code.js              ← Google Apps Script code
 ├── assets/
-│   └── Cash Logger Reel ToDo IT.mp4   ← Demo video
+│   └── Cash Loggero IT.mp4   ← Demo video
 └── screenshots/
     ├── architecture-flow.svg          ← How it works diagram
     ├── shortcut-flow-diagram.svg      ← Shortcut steps diagram
@@ -284,7 +284,7 @@ MIT License — use it however you want.
 
 ## 🏢 Built By
 
-**[ToDo IT Services](https://instagram.com/todoitservices)** | **[GitHub](https://github.com/GauravJiandaniGJ)**
+**[Gaurav Jiandani](https://instagram.com/todoitservices)** | **[GitHub](https://github.com/GauravJiandaniGJ)**
 
 We build smart automations for businesses.
 
@@ -297,8 +297,8 @@ We build smart automations for businesses.
 If this helped you, please:
 - ⭐ Star this repo
 - 📤 Share with someone who needs it
-- 📱 Follow [@todoitservices](https://instagram.com/todoitservices) for more
+- 📱 Follow [@gj288](https://instagram.com/gj288) for more
 
 ---
 
-*Made with ❤️ in Ahmedabad, India*
+*Made with ❤️ inGandhidham, India*
