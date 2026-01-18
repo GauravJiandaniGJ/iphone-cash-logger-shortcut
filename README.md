@@ -19,14 +19,6 @@ Perfect for couples, families, or solo use.
 
 ---
 
-## 🎬 Demo
-
-https://github.com/user-attachments/assets/your-demo-video
-
-*(Replace with your reel/demo video)*
-
----
-
 ## 📋 What You'll Need
 
 - iPhone (iOS 15+)
