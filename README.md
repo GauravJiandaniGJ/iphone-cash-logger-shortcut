@@ -288,9 +288,7 @@ MIT License — use it however you want.
 
 **[Gaurav Jiandani](https://instagram.com/gj288)** | **[GitHub](https://github.com/GauravJiandaniGJ)**
 
-We build smart automations for businesses.
-
-📩 DM us for custom automation solutions!
+📩 DM me for custom automation solutions!
 
 ---
 
